@@ -18,6 +18,7 @@ namespace WinFormCefSharp
             var settings = new CefSettings();
             settings.IgnoreCertificateErrors = true;
             settings.MultiThreadedMessageLoop = false;
+            settings.ExternalMessagePump = true;
             Cef.Initialize(settings);
             //Õâ¸ö±ØÐë
             Application.Idle += Application_Idle;
